@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .stage_area {
+        width: 900px;
+        min-height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 100px 50px;
+        background-color: #f0f0f0;
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.35);
+        -webkit-perspective: 800px;
+        -moz-perspective: 800px;
+        perspective: 800px;
+        -webkit-transition: top 0.5s;
+        position: relative;
+        top: 0;
+      }
+
+      .container {
+        width: 128px;
+        height: 100px;
+        margin-left: -64px;
+        -webkit-transition: -webkit-transform 1s;
+        -moz-transition: -moz-transform 1s;
+        transition: transform 1s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: absolute;
+        left: 50%;
+      }
+
+      .piece {
+        width: 128px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        -moz-transition: opacity 1s, -moz-transform 1s;
+        transition: opacity 1s, transform 1s;
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage" class="stage_area">
+      <div class="container">
+        <img
+          class="piece1 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg"
+          style="transform: rotateY(0deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece8 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm8.jpg"
+          style="transform: rotateY(40deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece3 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm3.jpg"
+          style="transform: rotateY(80deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece4 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm4.jpg"
+          style="transform: rotateY(120deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece6 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm6.jpg"
+          style="transform: rotateY(160deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece7 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm7.jpg"
+          style="transform: rotateY(200deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece10 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm10.jpg"
+          style="transform: rotateY(240deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece13 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm13.jpg"
+          style="transform: rotateY(280deg) translateZ(195.839px);"
+        />
+        <img
+          class="piece15 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm15.jpg"
+          style="transform: rotateY(320deg) translateZ(195.839px);"
+        />
+      </div>
+    </div>
+    <script>
+    </script>
+  </body>
+</html>
