@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .stage {
+        width: 1000px;
+        min-height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 100px 50px;
+        background-color: #f0f0f0;
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.35);
+        position: relative;
+        perspective: 800px;
+        top: 0;
+      }
+      .container {
+        width: 128px;
+        height: 100px;
+        position: absolute;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        left: 50%;
+      }
+      .piece {
+        width: 128px;
+        position: absolute;
+        /* transition: transform 1s; */
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="container" id="container">
+        <img
+          class="piece1 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg"
+          style="transform: rotateY(0deg) translateZ(120px);"
+        />
+        <img
+          class="piece8 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm8.jpg"
+          style="transform: rotateY(60deg) translateZ(120px);"
+        />
+        <img
+          class="piece3 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm3.jpg"
+          style="transform: rotateY(120deg) translateZ(120px);"
+        />
+        <img
+          class="piece4 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm4.jpg"
+          style="transform: rotateY(180deg) translateZ(120px);"
+        />
+        <img
+          class="piece6 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm6.jpg"
+          style="transform: rotateY(240deg) translateZ(120px);"
+        />
+        <img
+          class="piece6 piece"
+          src="http://image.zhangxinxu.com/image/study/s/s128/mm13.jpg"
+          style="transform: rotateY(300deg) translateZ(120px);"
+        />
+      </div>
+    </div>
+    <script>
+        var container = document.getElementById("container");
+        var indexpiece = 0;
+        container.addEventListener("click",function(){
+            this.style.transform = 'rotateY('+(-1*60*++indexpiece)+"deg)";
+        });
+    </script>
+  </body>
+</html>
